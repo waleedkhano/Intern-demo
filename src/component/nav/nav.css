@@ -52,3 +52,64 @@
     color: black;
     letter-spacing: 1px;
 }
+
+.barIcon{
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+    margin-right: 20px;
+    display: none;
+}
+.barIcon:hover{
+    transform: scaleY(1.3);
+    transition: 0.5s;
+}
+.cross{
+    font-size: 40px;
+    color: white;
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .navContent{
+        display: none;
+    }
+    .crossActive{
+        display: block;
+        cursor: pointer;
+    }
+    .barIcon{
+        display: block;
+    }
+    .toggle{
+        display: block;
+        position: absolute;
+        background-color: #25262A;
+        width: 100%;
+        height: 100vh;
+        left: -100px;
+        top: 0;
+        padding: 30% 40%;
+    }
+    .toggle a{
+        display: block;
+        flex-direction: column;
+        margin-top: 40px;
+        width: inherit;
+    }
+    .cross{
+        position: absolute;
+        left: 45%;
+    }
+}
+@media screen and (max-width: 750px) {
+   .navIcon,
+   .navContactBtn{
+    display: none;
+   }
+}
+@media screen and (max-width: 400px) {
+    .toggle{
+        padding: 40% 25%;
+    }
+}
