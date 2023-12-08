@@ -1,0 +1,274 @@
+.HomeCom {
+    background-color: #25262A;
+    color: white;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.homeLeft {
+    padding: 80px 35px;
+    width: 50%;
+}
+
+.intro {
+    color: #63F0A9;
+    letter-spacing: 1px;
+}
+
+.homeHeading {
+    font-size: 6vw;
+    letter-spacing: 2px;
+    font-weight: 700;
+    line-height: 110%;
+}
+
+.homeHeading span {
+    font-weight: 600;
+    font-size: 5vw;
+}
+
+.homePara {
+    margin-top: 40px;
+    letter-spacing: 1px;
+    font-size: 1vw;
+}
+
+.homeBtn {
+    background-color: #FEC71D;
+    padding: 18px 50px;
+    border-radius: 14px;
+    font-size: 1.2rem;
+    color: black;
+    letter-spacing: 1px;
+    width: 220px;
+    margin-top: 40px;
+    box-shadow: 0 10px 15px 0 rgba(255, 174.99999999999997, 40.99999999999999, .25098039215686274);
+}
+
+.homeBtn:hover {
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.homeRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+    margin-top: 100px;
+    width: 50%;
+}
+
+.homeRight img {
+    position: absolute;
+    margin-top: -50px;
+}
+
+.circle {
+    width: 800px;
+    height: 800px;
+    border: double 130px transparent;
+    border-radius: 50%;
+    background-image: linear-gradient(#25262A, #25262A), radial-gradient(circle at top left, #62F0A8,#3C9267);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+  }
+
+  .designBox{
+    position: absolute;
+  }
+  .box{
+    background-color: #2D2E32;
+    font-size: 40px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #63F0A9;
+  }
+  .id{
+    position: relative;
+    top: -120px;
+    left: -300px;
+  }
+  .ps{
+    position: relative;
+    top: -220px;
+    right: -300px;
+  }
+  .ai{
+    position: relative;
+    bottom: 100px;
+    left: -380px;
+  }
+  .xd{
+    position: relative;
+    bottom: 0px;
+    right: -380px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .circle {
+        width: 600px;
+        height: 600px;
+        border: double 130px transparent;
+    }
+    .id{
+        top: -50px;
+        left: -220px;
+      }
+      .ps{
+        top: -150px;
+        right: -220px;
+      }
+      .ai{
+        bottom: 100px;
+        left: -320px;
+      }
+      .xd{
+        bottom: 0px;
+        right: -300px;
+      }
+}
+  @media screen and (max-width: 1000px) {
+    .homeRight img {
+        width: 450px;
+        height: 650px;
+        margin-top: -50px;
+    }
+    .circle {
+        width: 500px;
+        height: 500px;
+        border: double 100px transparent;
+    }
+}
+  @media screen and (max-width: 900px) {
+    .homeRight img {
+        width: 350px;
+        height: 550px;
+    }
+    .homeHeading {
+        font-size: 8vw;
+    }
+    
+    .homeHeading span {
+        font-size: 6vw;
+    }
+    
+    .homePara {
+        margin-top: 40px;
+        letter-spacing: 1px;
+        font-size: 2vw;
+    }
+    .box{
+      font-size: 30px;
+      width: 80px;
+      height: 80px;
+    }
+    .id{
+      top: -50px;
+      left: -150px;
+    }
+    .ps{
+      top: -150px;
+      right: -150px;
+    }
+    .ai{
+      bottom: 100px;
+      left: -220px;
+    }
+    .xd{
+      bottom: 0px;
+      right: -220px;
+    }
+}
+  @media screen and (max-width: 800px) {
+    .homeRight img {
+        width: 300px;
+        height: 500px;
+    }
+    .circle {
+      width: 400px;
+      height: 400px;
+      border: double 80px transparent;
+  }
+    .id{
+      top: -20px;
+      left: -150px;
+    }
+    .ps{
+      top: -100px;
+      right: -150px;
+    }
+    .ai{
+      left: -180px;
+    }
+    .xd{
+      right: -180px;
+    }
+}
+  @media screen and (max-width: 800px) {
+    .HomeCom {
+      flex-direction: column;
+      height: 130vh;
+    }
+    .homeLeft{
+      width: 100%;
+    }
+    .homeRight img {
+      width: 300px;
+      height: 453px;
+  }
+    .homeRight {
+      margin-top: 20px;
+      width: 100%;
+  }
+}
+  @media screen and (max-width: 450px) {
+    .homeHeading {
+      font-size: 15vw;
+      line-height: 90%;
+  }
+  
+  .homeHeading span {
+      font-size: 12vw;
+  }
+  .homePara {
+    font-size: 3vw;
+}
+    .homeRight{
+      margin-left: -20px;
+    }
+    .homeRight img {
+      width: 270px;
+      height: 420px;
+  }
+  .circle {
+    width: 350px;
+    height: 350px;
+    border: double 60px transparent;
+}
+.id{
+  left: -100px;
+}
+.ps{
+  right: -120px;
+}
+.ai{
+  left: -160px;
+}
+.xd{
+  bottom: 40px;
+  right: -160px;
+}
+.box{
+  font-size: 25px;
+  width: 70px;
+  height: 70px;
+}
+
+}
