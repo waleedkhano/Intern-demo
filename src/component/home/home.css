@@ -6,7 +6,10 @@
     height: 100vh;
     overflow: hidden;
 }
-
+.textani{
+  margin-top: -50px;
+  opacity: 0;
+}
 .homeLeft {
     padding: 80px 35px;
     width: 50%;
@@ -43,7 +46,8 @@
     color: black;
     letter-spacing: 1px;
     width: 220px;
-    margin-top: 40px;
+    margin-top: 150px;
+    opacity: 0;
     box-shadow: 0 10px 15px 0 rgba(255, 174.99999999999997, 40.99999999999999, .25098039215686274);
 }
 
@@ -56,18 +60,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 50px;
+    margin-right: 80px;
     margin-top: 100px;
     width: 50%;
 }
 
 .homeRight img {
     position: absolute;
-    margin-top: -50px;
+    margin-top: 700px;
+    opacity: 0;
 }
 
 .circle {
     width: 800px;
+    scale: 0.5;
+    opacity: 0;
     height: 800px;
     border: double 130px transparent;
     border-radius: 50%;
@@ -94,21 +101,29 @@
     position: relative;
     top: -120px;
     left: -300px;
+    opacity: 0;
+    scale: 1.2;
   }
   .ps{
     position: relative;
     top: -220px;
     right: -300px;
+    opacity: 0;
+    scale: 1.2;
   }
   .ai{
     position: relative;
     bottom: 100px;
     left: -380px;
+    opacity: 0;
+    scale: 1.2;
   }
   .xd{
     position: relative;
     bottom: 0px;
     right: -380px;
+    opacity: 0;
+    scale: 1.2;
   }
 
   @media screen and (max-width: 1200px) {
