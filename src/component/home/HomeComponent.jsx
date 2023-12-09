@@ -48,9 +48,9 @@ const HomeComponent = () => {
         let ctx = gsap.context(() => {
             var tl = gsap.timeline({
                 scrollTrigger: {
-                    trigger: ".HomeCom",
-                    start: "center 65%",
-                    end: "150% center",
+                    trigger: ".homeRight",
+                    start: "40% bottom",
+                    end: "bottom center",
                     scrub: true,
                 }
             })
@@ -93,7 +93,7 @@ const HomeComponent = () => {
                 </div>
                 <div className="homeRight">
                     <div className="circle"></div>
-                    <Image src={'https://demo.phlox.pro/freelancer/wp-content/uploads/sites/272/2021/02/hero-img.png'} width='550' height='800' />
+                    <Image src={'https://demo.phlox.pro/freelancer/wp-content/uploads/sites/272/2021/02/hero-img.png'} width='500' height='740' />
                     <div ref={component} className="designBox">
                         <div className="box id">Id</div>
                         <div className="box ps">Ps</div>
