@@ -1,0 +1,280 @@
+/* Card Css  */
+.card {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    color: white;
+    padding-left: 12%;
+    justify-content: center;
+}
+
+.leftCard {
+    width: 43%;
+}
+
+.imgBack {
+    width: 28%;
+    height: 65vh;
+    transform: rotate(-10deg);
+    position: absolute;
+    background-color: #404040;
+    border-radius: 50px;
+
+}
+
+.leftCard img {
+    width: 75%;
+    height: 65vh;
+    border-radius: 50px;
+    position: relative;
+
+}
+
+.rightCard {
+    width: 60%;
+    margin-right: 50px;
+}
+
+.CardText {
+    font-size: 2vw;
+    margin: 50px 0;
+    font-weight: bold;
+}
+
+.CardName {
+    color: #64F4AB;
+    font-size: 25px;
+}
+
+.CardRink {
+    color: #E5E5E5;
+    margin: 20px 0;
+}
+
+
+
+
+
+/* lastComp css  */
+
+.cardsCom {
+    background-color: #2D2E32;
+}
+
+.divCirlce {
+    width: 100%;
+}
+
+.divCircle2 {
+    width: 50px;
+    display: flex;
+    margin: auto;
+
+}
+
+.circle1,
+.circle2 {
+    background-color: #25262A;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 3px;
+    cursor: pointer;
+    margin-top: -300px;
+    position: relative;
+}
+
+.yellowCircle {
+    border: 5px solid #FECD1A;
+}
+
+.cardbox {
+    position: relative;
+    height: 100vh;
+}
+
+
+.card-from-left {
+    transition: transform 400ms ease-out;
+    transform: translate3d(100, 0, 0);
+    opacity: 0;
+}
+
+.card-from-right {
+    transition: transform 400ms ease-out;
+    transform: translate3d(-100%, 0, 0);
+    opacity: 0;
+    border: none;
+}
+
+.active {
+    transform: translate3d(0, 0, 0);
+    animation: fadeInRight 0.5s ease-out forwards;
+}
+
+.active2 {
+    transform: translate3d(0, 0, 0);
+    animation: fadeInLeft 0.5s ease-out forwards;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.lastCom {
+    width: 100vw;
+    height: 70vh;
+    color: white;
+    margin-top: -100px;
+}
+
+.lastComChild {
+    width: 85%;
+    border-radius: 50px;
+    height: 50vh;
+    margin: auto;
+    background-color: #25262A;
+    overflow: hidden;
+    position: relative;
+}
+
+.lastText {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.lastText h1{
+    font-size: 3vw;
+}
+.lastPara{
+    font-size: 1.5vw;
+    margin: 20px 0;
+    color: #E7EDF7;
+}
+.lastLine{
+    color: #327A56;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.lastText a {
+    background-color: #FEC71D;
+    padding: 18px 50px;
+    border-radius: 14px;
+    font-size: 1.2rem;
+    color: black;
+    letter-spacing: 1px;
+    width: 220px;
+    cursor: pointer;
+}
+
+.lastCircle{
+    background-color: #4AB680;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: -60px 0 0 -50px;
+    position: absolute;
+}
+.lastCircle2{
+    width: 200px;
+    height: 200px;
+    border: 30px solid #4AB680;
+    border-radius: 50%;
+    position: absolute;
+    right: -70px;
+    bottom: -70px;
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+    .leftCard img {
+        width: 80%;
+        height: 45vh;
+    }
+
+    .imgBack {
+        height: 45vh;
+
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .card {
+        height: 120vh;
+    }
+
+    .card {
+        flex-direction: column;
+    }
+
+    .rightCard {
+        width: 80%;
+        padding: 100px 0;
+    }
+
+    .leftCard {
+        width: 100%;
+    }
+
+    .leftCard img {
+        width: 75%;
+        height: 65vh;
+    }
+
+    .imgBack {
+        width: 70%;
+        height: 65vh;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .CardText {
+        font-size: 3.5vw;
+    }
+
+    .leftCard img {
+        height: 55vh;
+    }
+
+    .imgBack {
+        height: 55vh;
+    }
+    .lastCom{
+        margin-top: 150px;
+    }
+    .lastText h1{
+        font-size: 4vw;
+    }
+    .lastPara{
+        font-size: 2vw;
+        margin: 20px 0;
+        color: #E7EDF7;
+    }
+}

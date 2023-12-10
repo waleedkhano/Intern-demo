@@ -20,7 +20,7 @@
     border-radius: 60px;
     position: relative;
     z-index: 2;
-    transform: rotate(-10deg);
+    transform: rotate(10deg);
 
 }
 
@@ -30,7 +30,7 @@
     border-radius: 60px;
     height: 74vh;
     margin: -10px 100px;
-    transform: rotate(-10deg);
+    transform: rotate(10deg);
     position: absolute;
     z-index: 1;
 }

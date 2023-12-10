@@ -1,0 +1,100 @@
+.countContainer{
+    color: #E8E8E8;
+    padding: 200px 30px;
+    display: flex;
+}
+
+.devBox{
+    background-color: #25262A;
+    width: 25%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    position: relative;
+}
+
+.clients,
+.projects,
+.awards,
+.experience{
+    margin-top: 100px;
+    text-align: center;
+    opacity: 0;
+}
+
+.devBox h1{
+    font-size: 6vw ;
+    letter-spacing: 2px;
+    color: #64F4AB;
+}
+.devBox p{
+    font-size: 25px;
+}
+
+.roundStart{
+    border-radius: 40px 0px 0px 40px;
+}
+.roundEnd{
+    border-radius: 0px 40px 40px 0px;
+}
+
+.circleParent{
+    background-color:#2D2E32;
+}
+.circleYellows {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #FEC41F;
+    position: absolute;
+    left: -5px;
+    margin-top: 470px;
+    transition: all ease-in-out;
+  }
+.circleYellow2 {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    right: -5px;
+    margin-top: 150px;
+    background-image: linear-gradient(#25262A, #25262A), radial-gradient(circle at top left, #D4AC1F,#D4AC1F);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    border: double 20px transparent;
+    transition: all ease-in-out;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .devBox{
+        height: 300px;
+    }
+    .devBox p{
+        font-size: 18px;
+    }
+    
+ }
+  @media screen and (max-width: 800px) {
+    .countContainer{
+        flex-direction: column;
+        padding: 200px auto;
+    }
+    .devBox{
+        width: 90%;
+        margin: 0;
+        height: 180px;
+        padding: 0;
+    }
+    .roundStart{
+        border-radius: 40px 40px 0px 0px;
+    }
+    .roundEnd{
+        border-radius: 0px 0px 40px 40px;
+    }
+    .circleYellows {
+        margin-top: 850px;
+      }
+ }
