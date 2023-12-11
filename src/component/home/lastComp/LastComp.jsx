@@ -1,7 +1,12 @@
-import React, { useState } from 'react';
+'use client'
+
+import React, { useEffect, useState } from 'react';
 import Cards from './Card';
-import './lastComp.css'; // Assuming you have a CSS file for styling
+import './lastComp.css';
 import Link from 'next/link';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import gsap from 'gsap';
+gsap.registerPlugin(ScrollTrigger);
 
 const LastComp = () => {
     const [activeCard, setActiveCard] = useState(1);
@@ -9,6 +14,32 @@ const LastComp = () => {
     const handleCircleClick = (cardNumber) => {
         setActiveCard(cardNumber);
     };
+
+    useEffect(() => {
+        let ctx = gsap.context(() => {
+            var tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".cardsCom",
+                    start: "center center",
+                    end: "bottom -50%",
+                }
+            })
+            tl.to(".lastCom", 1,{
+                opacity: 1,
+                scale: 1
+            }).to(".lastCircle", 0.5,{
+                opacity: 1,
+            },"same").to(".lastCircle2", 0.5,{
+                opacity: 1,
+            },"same").to(".lastText", {
+                opacity: 1,
+                y: -25
+            })
+
+        });
+        return () => ctx.revert();
+
+    }, [])
 
     return (
         <>

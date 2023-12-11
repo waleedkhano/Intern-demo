@@ -1,0 +1,32 @@
+.portfolioProjects{
+    background-color: #2D2E32;
+    color: white;
+}
+
+.circleParent{
+    background-color:#2D2E32;
+}
+.circleGreen {
+    width: 300px;
+    height: 300px;
+    border: double 50px transparent;
+    border-radius: 50%;
+    background-image: linear-gradient(#25262A, #25262A), radial-gradient(circle at top left, #62F0A8,#2E3B38);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    position: absolute;
+    right: -170px;
+    margin-top: -100px;
+  }
+.circleYellow {
+    width: 300px;
+    height: 300px;
+    border: double 80px transparent;
+    border-radius: 50%;
+    background-image: linear-gradient(#25262A, #25262A), radial-gradient(circle at top left, #D4AC1F,#4C4230);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    position: absolute;
+    left: -170px;
+    margin-top: -100px;
+  }

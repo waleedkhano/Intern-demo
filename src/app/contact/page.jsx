@@ -1,10 +1,11 @@
+const { default: ContactCom } = require("@/component/contact/ContactCom")
 
 
 
 const page = () =>{
     return(
         <>
-       contact
+       {/* <ContactCom/> */}
         </>
     )
 }

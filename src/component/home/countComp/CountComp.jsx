@@ -51,7 +51,7 @@ const CountComp = () => {
                     onCompleteParams: ['.experience h1', 7],
                     onComplete: countAnimation,
                 });
-        }, component.current);
+        });
         return () => ctx.revert();
     }, []);
 
@@ -61,21 +61,39 @@ const CountComp = () => {
             var tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: ".count",
-                    start: "90% bottom",
-                    end: "bottom 30%",
+                    start: "70% bottom",
+                    end: "bottom -50%",
                     scrub: true,
-                    // markers: true
                 }
             })
-            tl.to(".circleYellow2", 1.5, {
+            tl.to(".circleYellow2", {
                 x: -220,
                 ease: 3
-            }).to(".circleYellows", 1.5, {
+            }).to(".circleYellows", {
                 x: 200,
                 ease: 3
             })
 
-        }, component.current);
+        });
+        return () => ctx.revert();
+
+    }, [])
+    useEffect(() => {
+        let ctx = gsap.context(() => {
+            var tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".count",
+                    start: "110% bottom",
+                    end: "bottom -50%",
+                    scrub: true,
+                }
+            })
+            tl.to(".circleYellows", {
+                x: 200,
+                ease: 3
+            })
+
+        });
         return () => ctx.revert();
 
     }, [])

@@ -49,23 +49,24 @@ const HomeComponent = () => {
             var tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: ".homeRight",
-                    start: "40% bottom",
-                    end: "bottom center",
+                    start: "10% bottom",
+                    end: "bottom top",
                     scrub: true,
+                    markers: true
                 }
             })
             tl.to(".id", {
-                x: -70,
-                duration: 2,
+                x: -170,
+                duration: 0.5,
             }, "same").to(".ps", {
-                x: 70,
-                duration: 2,
+                x: 170,
+                duration: 0.5,
             }, "same").to(".ai", {
-                x: -70,
-                duration: 2,
+                x: -170,
+                duration: 0.5,
             }, "same").to(".xd", {
-                x: 70,
-                duration: 2,
+                x: 170,
+                duration: 0.5,
             }, "same")
 
         }, component.current);

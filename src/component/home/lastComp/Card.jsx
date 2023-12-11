@@ -1,7 +1,32 @@
 import Image from 'next/image';
 import './lastComp.css';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useEffect } from 'react';
+gsap.registerPlugin(ScrollTrigger);
 
 const Cards = ({CardText, CardName, CardRink, img}) => {
+
+    useEffect(() => {
+        let ctx = gsap.context(() => {
+            var tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".card",
+                    start: "-60% top",
+                    end: "bottom -50%",
+                }
+            })
+            tl.to(".card", {
+                opacity: 1,
+                y: -20
+
+            })
+
+        });
+        return () => ctx.revert();
+
+    }, [])
+
     return (
         <>
             <div className="card">
