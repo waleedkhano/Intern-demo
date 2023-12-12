@@ -52,7 +52,7 @@ const HomeComponent = () => {
                     start: "10% bottom",
                     end: "bottom top",
                     scrub: true,
-                    markers: true
+                    // markers: true
                 }
             })
             tl.to(".id", {

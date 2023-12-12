@@ -27,7 +27,7 @@ const page = () => {
                     start: "15% bottom",
                     end: "bottom center",
                     scrub: true,
-                    markers: true
+                    // markers: true
                 }
             })
             tl.to(project1.current, {
