@@ -4,6 +4,8 @@ import './countComp.css';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
+import { TextPlugin } from 'gsap/TextPlugin';
+gsap.registerPlugin(TextPlugin);
 
 const CountComp = () => {
     const component = useRef(null);
@@ -22,11 +24,10 @@ const CountComp = () => {
             // Add counting animations
             const countAnimation = (target, endValue) => {
                 gsap.to(target, {
-                    duration: 1,
-                    innerHTML: Math.round(endValue).toFixed(0), // Convert to integer string
-                    ease: 'power4.out',
+                  duration: 1,
+                  text: { value: endValue, format: { formatter: (value) => value  } },
                 });
-            };
+              };
 
 
             tl.to('.clients', 0.5, {

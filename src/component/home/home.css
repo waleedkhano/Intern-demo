@@ -126,6 +126,56 @@
     scale: 1.2;
   }
 
+
+  .sideText {
+    display: flex;
+    gap: 5px;
+    position: fixed;
+    z-index: 99999;
+    top: 45%;
+    cursor: pointer;
+    right: 0;
+    color: white;
+    flex-direction: column;
+}
+
+.sidePara {
+    background-color: #00000084;
+    width: 140px;
+    height: 40px;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    transition: margin-right 0.5s;
+}
+
+.sidePara:hover {
+  background-color: rgb(26, 133, 255);
+}
+
+
+.sideText img {
+    margin: 0 10px 0 10px;
+}
+  
+  .sidebtn{
+    position: fixed;
+    z-index: 99999;
+    top: 90%;
+    right: 20px;
+    background-color: rgb(65, 122, 188);
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
   @media screen and (max-width: 1200px) {
     .circle {
         width: 600px;
