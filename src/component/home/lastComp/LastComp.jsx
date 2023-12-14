@@ -83,7 +83,7 @@ const LastComp = () => {
                         <div className="lastText">
                             <p className='lastLine'>——</p>
                             <h1>Lets Work Together</h1>
-                            <p className='lastPara'>The technological revolution is changing aspect of our lives, and the fabric of society itself. it's also changing the way we learn and what we learn</p>
+                            <p className='lastPara'>The technological revolution is changing aspect of our lives, and the fabric of society itself. it&apos;s also changing the way we learn and what we learn</p>
                             <Link href={'/contact'}>Contact Me</Link>
                         </div>
                     </div>

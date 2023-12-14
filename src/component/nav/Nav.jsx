@@ -36,7 +36,6 @@ export const Nav = () => {
 
     useEffect(() => {
         setActiveLink(window.location.pathname);
-        console.log(activeLink)
     }, []);
 
     return (

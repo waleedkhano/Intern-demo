@@ -82,9 +82,9 @@ const HomeComponent = () => {
                 <div className="homeLeft">
                     <div className="textani">
                         <div className="intro">— Introducing</div>
-                        <h1 className="homeHeading"><span>Hello</span> <br /> I'm Jessy <br /> Walter</h1>
+                        <h1 className="homeHeading"><span>Hello</span> <br /> I&apos;m Jessy <br /> Walter</h1>
                         <p className="homePara">Since beginning my journey as a freelance designer <br />
-                            nearby 7 years ago, I 've done remote work for <br />
+                            nearby 7 years ago, I &apos;ve done remote work for <br />
                             agencies, consulted for startup, and collaborated with <br />
                             talented people to create digital products.
                         </p>
@@ -95,7 +95,7 @@ const HomeComponent = () => {
                 </div>
                 <div className="homeRight">
                     <div className="circle"></div>
-                    <Image src={'https://demo.phlox.pro/freelancer/wp-content/uploads/sites/272/2021/02/hero-img.png'} width='500' height='740' />
+                    <Image src={'https://demo.phlox.pro/freelancer/wp-content/uploads/sites/272/2021/02/hero-img.png'} width='500' height='740' alt="imgC" />
                     <div ref={component} className="designBox">
                         <div className="box id">Id</div>
                         <div className="box ps">Ps</div>

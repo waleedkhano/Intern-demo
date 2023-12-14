@@ -77,7 +77,7 @@ const HomeSecComp = () => {
                 <div className="secLeft">
                     <p className='skill'>— My Skills</p>
                     <h1>Why Hire Me For Next <br /> Project?</h1>
-                    <p className='secHomePara'>The technological revolution is changing aspect of our lives, and the fabric of society itself. it's also changing the way we learn and what we learn. Factual knowledge is less prized when everything you ever need to know can be found on your phone. There's no imperative to be an expert at doing everything when you can.</p>
+                    <p className='secHomePara'>The technological revolution is changing aspect of our lives, and the fabric of society itself. it&apos;s also changing the way we learn and what we learn. Factual knowledge is less prized when everything you ever need to know can be found on your phone. There&apos;s no imperative to be an expert at doing everything when you can.</p>
                     <div className="secBtn"><Link href={'#'}>Download CV</Link></div>
                 </div>
                 <div className="secRight">

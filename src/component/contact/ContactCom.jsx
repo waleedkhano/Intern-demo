@@ -28,7 +28,7 @@ const ContactCom = () =>{
                 <div className="contectText">
                     <p className='contactMe'>— Contact Me</p>
                     <h1>Get In Touch With Me</h1>
-                    <p className='contactPara'>The technological revolution is changing aspect of our lives, and the fabric of society itself. it's also changing the way we learn and what we learn. Factual knowledge is less prized when everything you ever need to know can be found on your phone. There's no imperative to be an expert Factual knowledge is less prized when everything you ever need to know can be found at doing everything.</p>
+                    <p className='contactPara'>The technological revolution is changing aspect of our lives, and the fabric of society itself. it&apos;s also changing the way we learn and what we learn. Factual knowledge is less prized when everything you ever need to know can be found on your phone. There&apos;s no imperative to be an expert Factual knowledge is less prized when everything you ever need to know can be found at doing everything.</p>
                 </div>
                 <div className="contectDetails">
                     <div className="phone">
